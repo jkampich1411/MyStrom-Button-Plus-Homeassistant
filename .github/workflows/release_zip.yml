@@ -1,0 +1,27 @@
+name: Release new version
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  release_zip:
+    name: Prepare release zip
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Create zip
+        run: |
+          cd custom_components/mystrom118
+          zip mystrom118.zip -r ./
+          
+      - name: Upload zip to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./custom_components/mystrom118/mystrom118.zip
+          asset_name: mystrom118.zip
+          tag: ${{ github.ref }}
+          overwrite: true
