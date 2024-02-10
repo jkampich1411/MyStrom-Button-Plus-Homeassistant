@@ -20,7 +20,7 @@ jobs:
       - name: Upload zip to release
         uses: svenstaro/upload-release-action@v1-release
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           file: ./custom_components/mystrom118/mystrom118.zip
           asset_name: mystrom118.zip
           tag: ${{ github.ref }}
