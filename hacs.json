@@ -1,0 +1,7 @@
+{
+    "name": "MyStrom Button Plus",
+    "render_readme": true,
+    "zip_release": true,
+    "filename": "mystrom118.zip",
+    "homeassistant": "2022.01.1"
+}

@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+
+      "user": {
+        "title": "Connect your device",
+        "description": "Please make sure you configured your device using the MyStrom mobile app and that it is plugged in!"
+      },
+      
+      "discovery": {
+        "description": "Please make sure that your device is plugged in to power!",
+        "title": "Discover your device",
+        "data": {
+          "checkme": "I am sure my device is plugged in"
+        }
+      },
+
+      "manual": {
+        "title": "Manual configuration",
+        "description": "Please enter the IP address of your device",
+        "data": {
+          "ip_address": "IP address"
+        }
+      },
+
+      "configure": {
+        "title": "Configuring your devices",
+        "description": "Please wait while we configure your device."
+      }
+    
+    },
+    
+    "abort": {
+      "no_devices_found": "No devices found",
+      "discovery_failed": "Discovery failed",
+      "already_configured": "Device was already configured"
+    }
+  }
+}
