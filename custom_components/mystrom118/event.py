@@ -135,19 +135,9 @@ class MyStromButtonEntity(CoordinatorEntity, EventEntity):
         return self._name
 
     @property
-    def state(self):
-        """Return state."""
-        return self._state
-
-    @property
     def icon(self):
         """Return icon."""
         return "mdi:radiobox-marked"
-
-    @property
-    def extra_state_attributes(self):
-        """Return attributes."""
-        return self.attributes
 
     @property
     def device_class(self):
