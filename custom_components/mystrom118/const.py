@@ -2,7 +2,7 @@
 DOMAIN = "mystrom118"
 PLATFORMS: list[str] = ["event", "sensor"]
 
-CORE_DEVICE_NAME = "MyStron Button Plus {mac}"
+CORE_DEVICE_NAME = "MyStrom Button Plus {mac}"
 CORE_DEVICE_MANUFACTURER = "myStrom AG"
 CORE_DEVICE_PRODUCT = "MyStrom Button Plus"
 
